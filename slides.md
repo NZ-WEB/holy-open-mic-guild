@@ -88,11 +88,11 @@ variant: bottom-right
 <div class="real-mission-columns">
   <section>
     <h2>сообщество</h2>
-    <img class="real-mission-photo" src="/guild-community.jpg" alt="Участники фронтенд-гильдии вместе на конференции" />
+    <img class="real-mission-photo real-mission-photo-community" src="/guild-community.jpg" alt="Участники фронтенд-гильдии вместе на конференции" />
   </section>
   <section>
     <h2>бызнес</h2>
-    <img class="real-mission-photo" src="/guild-business.png" alt="Кабан выглядывает из-за дерева" />
+    <img class="real-mission-photo real-mission-photo-business" src="/guild-business.png" alt="Кабан выглядывает из-за дерева" />
   </section>
 </div>
 
@@ -165,7 +165,7 @@ variant: right
 
 <div class="community-mascot-cards">
   <figure v-click="1" class="community-mascot-card">
-    <img src="/paketych.png" alt="Пакетыч — персонаж в виде пакета Магнита" />
+    <img class="community-mascot-photo-package" src="/paketych.png" alt="Пакетыч — персонаж в виде пакета Магнита" />
     <figcaption>Пакетыч</figcaption>
   </figure>
   <figure v-click="2" class="community-mascot-card">

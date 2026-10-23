@@ -280,11 +280,18 @@
 }
 
 .real-mission-photo {
-  width: 100%;
+  width: 390px;
   height: 390px;
   margin-top: 28px;
-  object-fit: contain;
-  object-position: left center;
+  object-fit: cover;
+}
+
+.real-mission-photo-community {
+  object-position: center bottom;
+}
+
+.real-mission-photo-business {
+  object-position: center 40%;
 }
 
 .slidev-layout .initiative-definition {
@@ -454,7 +461,8 @@
 .mascot-photo {
   width: 100%;
   height: 100%;
-  object-fit: contain;
+  object-fit: cover;
+  object-position: center top;
 }
 
 .election-content {
@@ -655,4 +663,9 @@
   font-weight: 700;
   line-height: 1.2;
   text-align: center;
+}
+
+.community-mascot-card .community-mascot-photo-package {
+  object-fit: cover;
+  object-position: center;
 }
