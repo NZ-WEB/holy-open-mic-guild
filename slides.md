@@ -138,10 +138,34 @@ class: real-problems-slide
 
 ---
 clicks: 3
-class: mascot-slide
+class: community-mascots-slide
 ---
 
 # Маскот гильдии
+
+<p class="community-mascots-subtitle">Предложения от сообщества</p>
+
+<div class="community-mascot-cards">
+  <figure v-click="1" class="community-mascot-card">
+    <img src="/paketych.png" alt="Пакетыч — персонаж в виде пакета Магнита" />
+    <figcaption>Пакетыч</figcaption>
+  </figure>
+  <figure v-click="2" class="community-mascot-card">
+    <img src="/rooster-developer.png" alt="Петух от народа за ноутбуком" />
+    <figcaption>Петух от народа</figcaption>
+  </figure>
+  <figure v-click="3" class="community-mascot-card">
+    <img src="/lorana.png" alt="Зелёная лягушка" />
+    <figcaption>Лягушка</figcaption>
+  </figure>
+</div>
+
+---
+clicks: 3
+class: mascot-slide
+---
+
+# Три кандидата
 
 <div class="mascot-cards">
   <div
@@ -248,7 +272,7 @@ class: guild-finale-slide
     <div class="finale-together-cats" role="img" aria-label="Коты собрались вместе в одну команду">
       <span>😺</span><span>😺</span><span>😺</span>
     </div>
-    <p>Общаемся. Помогаем. Делаем вместе.</p>
+    <p>Свобода, равенство, братство.</p>
   </section>
 </div>
 
