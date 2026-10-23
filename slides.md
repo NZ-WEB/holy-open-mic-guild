@@ -76,11 +76,11 @@ class: real-mission-slide
 <div class="real-mission-columns">
   <section>
     <h2>сообщество</h2>
-    <div class="photo-placeholder" role="img" aria-label="Место для будущего фото сообщества"></div>
+    <img class="real-mission-photo" src="/guild-community.jpg" alt="Участники фронтенд-гильдии вместе на конференции" />
   </section>
   <section>
     <h2>бызнес</h2>
-    <div class="photo-placeholder" role="img" aria-label="Место для будущего фото бизнеса"></div>
+    <img class="real-mission-photo" src="/guild-business.png" alt="Кабан выглядывает из-за дерева" />
   </section>
 </div>
 
