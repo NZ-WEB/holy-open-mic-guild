@@ -1,22 +1,31 @@
 ---
-theme: default
+theme: none
 title: Про гильдию фронтендеров в Магните
-colorSchema: light
+colorSchema: dark
 aspectRatio: 16/9
 canvasWidth: 1280
+transition:
+  name: slide-left
+  enterActiveClass: "transition-[translate] duration-500 ease-in-out motion-reduce:transition-none"
+  leaveActiveClass: "transition-[translate] duration-500 ease-in-out motion-reduce:transition-none"
 fonts:
+  sans: Nunito Sans
+  local: RF Dewi Extended, Nunito Sans
   provider: none
 htmlAttrs:
   lang: ru
 defaults:
   layout: default
 class: title-slide
+variant: right
+showNumbers: false
 ---
 
 # Про гильдию<br>фронтендеров<br>в Магните
 
 ---
 class: speaker-slide
+variant: top-right
 ---
 
 # Я:
@@ -32,6 +41,7 @@ class: speaker-slide
 ---
 clicks: 2
 class: guild-images-slide
+variant: diagonal
 ---
 
 # Что за гильдия?
@@ -44,6 +54,7 @@ class: guild-images-slide
 
 ---
 class: mission-slide
+variant: right
 ---
 
 # Гильдия в Магните:
@@ -69,6 +80,7 @@ class: mission-slide
 
 ---
 class: real-mission-slide
+variant: bottom-right
 ---
 
 # Реальная миссия
@@ -86,18 +98,21 @@ class: real-mission-slide
 
 ---
 class: section-slide
+variant: chapter
 ---
 
 # Матрица<br>компетенций
 
 ---
 class: competency-slide
+variant: left
 ---
 
 <CompetencyGame />
 
 ---
 class: initiatives-slide
+variant: right
 ---
 
 # Инициативы
@@ -108,6 +123,7 @@ class: initiatives-slide
 
 ---
 class: initiative-flow-slide
+variant: diagonal
 ---
 
 # От идеи до стандарта
@@ -124,6 +140,7 @@ class: initiative-flow-slide
 ---
 clicks: 4
 class: real-problems-slide
+variant: left
 ---
 
 # Реальные проблемы
@@ -139,6 +156,7 @@ class: real-problems-slide
 ---
 clicks: 3
 class: community-mascots-slide
+variant: right
 ---
 
 # Маскот гильдии
@@ -163,6 +181,7 @@ class: community-mascots-slide
 ---
 clicks: 3
 class: mascot-slide
+variant: right
 ---
 
 # Три кандидата
@@ -187,6 +206,7 @@ class: mascot-slide
 
 ---
 class: election-slide
+variant: bottom-right
 ---
 
 # Три дня выборов
@@ -203,6 +223,7 @@ class: election-slide
 ---
 clicks: 1
 class: election-results-slide
+variant: top-right
 ---
 
 # Результаты выборов
@@ -220,6 +241,7 @@ class: election-results-slide
 
 ---
 class: election-joke-slide
+variant: spotlight
 ---
 
 # Шутка
@@ -231,6 +253,7 @@ class: election-joke-slide
 
 ---
 class: guild-life-slide
+variant: diagonal
 ---
 
 <h1>Наши посты<br>в гильдии<br>выглядят вот так</h1>
@@ -239,6 +262,7 @@ class: guild-life-slide
 
 ---
 class: guild-life-slide
+variant: diagonal
 ---
 
 <h1>Наш флаг<br>выглядит вот так</h1>
@@ -247,6 +271,7 @@ class: guild-life-slide
 
 ---
 class: guild-life-slide
+variant: diagonal
 ---
 
 <h1>Наши мемы<br>выглядят вот так</h1>
@@ -255,6 +280,7 @@ class: guild-life-slide
 
 ---
 class: guild-finale-slide
+variant: closing
 ---
 
 <h1>Были каждый сам за себя.<br>Стали <span class="finale-guild-accent">гильдией.</span></h1>

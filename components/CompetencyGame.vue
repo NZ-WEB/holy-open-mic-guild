@@ -61,9 +61,9 @@ function toggleCard(id: string) {
 
 <style scoped>
 .competency-game {
-  --game-bg: #152b7b;
-  --game-card-bg: #1c3694;
-  --game-gold: #ffe17a;
+  --game-bg: transparent;
+  --game-card-bg: var(--deck-glass-bg);
+  --game-gold: var(--deck-tone-gold);
   width: 100%;
 }
 
@@ -86,9 +86,11 @@ function toggleCard(id: string) {
   justify-content: center;
   gap: 12px;
   padding: 26px 18px 18px;
-  border: 1px solid #3852a6;
-  border-radius: 6px;
+  border: 1px solid var(--deck-tone-blue);
+  border-radius: var(--deck-glass-radius);
   background: var(--game-card-bg);
+  box-shadow: var(--deck-glass-shadow);
+  backdrop-filter: blur(var(--deck-glass-blur));
   color: #fff;
   font-family: inherit;
   text-align: center;
@@ -99,7 +101,7 @@ function toggleCard(id: string) {
 .game-card:hover,
 .game-card:focus-visible {
   border-color: var(--game-gold);
-  background: #2442aa;
+  background: rgb(255 255 255 / 10%);
 }
 
 .game-card:focus-visible,
@@ -109,7 +111,7 @@ function toggleCard(id: string) {
 }
 
 .game-card.is-open {
-  background: #112363;
+  background: rgb(0 0 0 / 24%);
 }
 
 .card-price {
@@ -137,7 +139,7 @@ function toggleCard(id: string) {
 }
 
 .card-detail {
-  color: #d6dffb;
+  color: var(--deck-secondary);
   font-size: 21px;
   font-weight: 400;
   line-height: 1.2;
