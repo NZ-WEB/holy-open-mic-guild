@@ -137,10 +137,73 @@ class: real-problems-slide
 <p v-click="4" class="mascot-priority">Выбор маскота</p>
 
 ---
+clicks: 3
 class: mascot-slide
 ---
 
 # Маскот гильдии
+
+<div class="mascot-cards">
+  <div
+    v-for="number in 3"
+    :key="number"
+    class="mascot-card"
+    :class="{ 'is-revealed': $clicks >= number }"
+    role="group"
+    :aria-label="$clicks >= number ? `Вариант маскота ${number}` : `Маскот ${number}: скрыт`"
+  >
+    <span v-if="$clicks < number" class="mascot-question" aria-hidden="true">?</span>
+    <template v-else>
+      <img v-if="number === 1" class="mascot-photo" src="/mascot-red-panda.png" alt="Концепт-арт: красная панда в кимоно" />
+      <img v-else-if="number === 2" class="mascot-photo" src="/mascot-panda.png" alt="Концепт-арт: панда в кимоно" />
+      <img v-else class="mascot-photo" src="/mascot-rooster.png" alt="Концепт-арт: петух в очках и футболке MAGNIT TECH" />
+    </template>
+  </div>
+</div>
+
+---
+class: election-slide
+---
+
+# Три дня выборов
+
+<div class="election-content">
+  <ul class="election-facts">
+    <li>Три дня выборов</li>
+    <li>Все регионы России</li>
+    <li>Два кандидата:<br>лиса и петух</li>
+  </ul>
+  <img class="election-image" src="/mascot-ballot.png" alt="Бюллетень выборов маскота гильдии с двумя кандидатами: петух и лиса" />
+</div>
+
+---
+clicks: 1
+class: election-results-slide
+---
+
+# Результаты выборов
+
+<div class="election-content">
+  <div class="election-result-copy">
+    <p>Первые два дня уверенно побеждал кандидат от народа.</p>
+    <p v-click="1" class="election-result-turn">В последний день — явка <strong>99%</strong> в республиках Северного Кавказа.<br><strong class="election-winner">Победила лиса.</strong></p>
+  </div>
+  <div class="election-result-images">
+    <img v-show="$clicks === 0" class="election-image" src="/mascot-rooster.png" alt="Кандидат от народа — петух" />
+    <img v-show="$clicks >= 1" class="election-image" src="/mascot-red-panda.png" alt="Победила лиса" />
+  </div>
+</div>
+
+---
+class: election-joke-slide
+---
+
+# Шутка
+
+<div class="election-content">
+  <h2 class="election-joke-subtitle">Победил петух.</h2>
+  <img class="election-image" src="/mascot-rooster.png" alt="Настоящий победитель выборов маскота — петух" />
+</div>
 
 ---
 class: guild-life-slide
@@ -167,14 +230,26 @@ class: guild-life-slide
 <img class="guild-life-photo" src="/guild-meme.jpg" alt="Мем гильдии: новость о лисе, которая украла петуха на ВДНХ" />
 
 ---
-clicks: 1
-class: closing-slide
+class: guild-finale-slide
 ---
 
-<div class="closing-copy">
-  <h1>Я просто хотел<br>быть главным</h1>
-  <p class="closing-intention">и важно поправлять причёску<br>на звонках.</p>
-  <p v-click="1" class="closing-punchline">В итоге так и вышло.</p>
+<h1>Были каждый сам за себя.<br>Стали <span class="finale-guild-accent">гильдией.</span></h1>
+
+<div class="finale-panels">
+  <section class="finale-before">
+    <h2>Дикие коты</h2>
+    <div class="finale-scattered-cats" role="img" aria-label="Коты шипят друг на друга из разных углов">
+      <span>😾</span><span>🙀</span><span>😾</span>
+    </div>
+    <p>Шипели. Дрались. Сидели по углам.</p>
+  </section>
+  <section class="finale-after">
+    <h2>Одна пожилая гильдия</h2>
+    <div class="finale-together-cats" role="img" aria-label="Коты собрались вместе в одну команду">
+      <span>😺</span><span>😺</span><span>😺</span>
+    </div>
+    <p>Общаемся. Помогаем. Делаем вместе.</p>
+  </section>
 </div>
 
-<img class="closing-photo" src="/hair-on-calls.jpg" alt="Евгений Федосеев поправляет причёску, сидя в кресле" />
+<blockquote class="finale-message">«По одному — шипим, <strong>вместе — кукарекаем</strong>»</blockquote>
